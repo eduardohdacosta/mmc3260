@@ -1,0 +1,163 @@
+/*--------------------------------------------------------- CSS for Index, Resume, Connect */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background: #000000;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+/*--------------------------------------------------------- Header */
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    height: 45px;
+	width: 100%;
+	text-align: center;
+}
+
+header nav {
+    float: left;
+    margin-top: 12px;
+    width: 100%;
+    font-size: 20px;
+}
+
+header a {
+    color: #aaaaaa;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+header a:active {
+    text-decoration: underline;
+}
+    
+/*--------------------------------------------------------- Content */
+
+article {
+	padding: 0 50px 0px 25px;
+	margin: 0px 8px 0px 8px;
+}
+
+article h1 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+article h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+article a {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+article p {
+	line-height: 24px;
+}
+
+article ul { /*Allows me to indent the entire list*/
+    list-style-position:inside;
+    text-indent: 16px;
+    margin-bottom: 16px;
+}
+
+.media { /*Allows me to place image left*/
+    float:right;
+    margin: 0 0 0 12px;
+}
+
+#wrapper {
+	width: 70%;
+	background: #ffffff;
+	margin: 0 auto 0 auto;
+}
+
+/*--------------------------------------------------------- Footer */
+
+footer {
+	height: 115px;
+	background-color: #aaaaaa;
+	padding: 10px;
+	margin: 15px 0 15px 0;
+	text-align:center;
+}
+
+footer a {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer a:active {
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------- Device Specific Override */
+
+@media screen and (max-width: 600px) {
+
+    header {
+		height: 50px;
+        
+	}
+    header nav {
+        width: 80%;
+		display: inline;
+		float: none;
+	}
+	
+	header a {
+		margin-right: 3px;   
+    }
+	
+	article {
+		margin-left: 2%;
+		margin-right: 2%;
+		padding: 2%;
+	}
+	
+	h1, h2 {
+		text-align: center;
+	}
+    
+	p {
+		margin-bottom: 6px;
+	}
+    
+     #wrapper {
+		width: 90%;
+	}
+	
+	footer {
+		height: 135px;
+	}
+	
+	footer a {
+		margin-right: 3px;
+	}
+}
